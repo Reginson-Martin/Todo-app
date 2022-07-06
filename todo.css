@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: 'fira sans',sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    background:#15223b;
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h2{
+font-size: 2.5rem;
+font-weight: 300;
+margin-bottom: 1rem;
+color: gray;
+}
+#form{
+    display: flex;
+}
+input,button{
+appearance: none;
+border: none;
+outline: none;
+background: none;
+}
+#input{
+flex:1 1 0%;
+padding: 1rem;
+border: solid;
+margin-right: 1rem;
+border-radius: 1rem;
+font-size: 1.25rem;
+color: gray;
+}
+#submit{
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+main{
+    flex:1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.todos-list{
+padding: 2rem;
+}
+.todos-list h3{
+    font-size: 1.9rem;
+    font-weight: 300;
+    color:gray;
+    margin-bottom: 1rem;
+}
+#todos .todo{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    border: solid;
+}
+#todos .todo .content .text{
+    color:white;
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+}
+#todos .todo .content .text:not(:read-only){
+    color: red;
+}
+#todos .todo .actions{
+    display: flex;
+     margin:none;
+}
+.delete{
+    cursor: pointer;
+    color: red;
+    text-transform: uppercase;
+}
+.edit{
+    cursor: pointer;
+ color: antiquewhite;
+    text-transform: uppercase;
+}
+
+
+
+
